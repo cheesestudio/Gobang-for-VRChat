@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9159139593255957566
 Transform:
   m_ObjectHideFlags: 0
@@ -136,6 +136,8 @@ MonoBehaviour:
   WhiteMaterial: {fileID: 2100000, guid: cda36452e0dec43449f4e28dd7c16f1e, type: 2}
   BlackMaterial: {fileID: 2100000, guid: 38ea3d38a5b4f764289e22e0cec13315, type: 2}
   Gobang: {fileID: 0}
+  initalPosition: {x: 0, y: 0, z: 0}
+  initalPositionb: {x: 0, y: 0, z: 0}
   SnapPositionScale: {x: 0.065, y: 1000, z: 0.065}
   Type: 1
 --- !u!114 &9184240479049238591

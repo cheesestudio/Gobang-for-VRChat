@@ -17,6 +17,7 @@ namespace CheeseGobang
 
         [SerializeField] private BitFieldUdonDemo bitFieldUdonDemo;
         private int flag = 0;
+        private bool nextSetted = false;
 
         /// <summary>
         /// 空
@@ -93,15 +94,19 @@ namespace CheeseGobang
             int winner = CheckForWin();
             if (winner == PieceTypeWhite)
             {
-                winnerTmp.text = "White Win!";
+                winnerTmp.text = "<color=#FFFFFF>White Win!</color>";
+             
+                nextSetted= true;
             }
             if (winner == PieceTypeBlack) 
             { 
-                winnerTmp.text = "Black Win!"; 
+                winnerTmp.text = "<color=#000000>Black Win!</color>"; 
+                nextSetted= true;
             }
             if (winner == PieceTypeEmpty)
             {
                 winnerTmp.text = "";
+                nextSetted= false;
             }
         }
         public int Calculate()
@@ -177,7 +182,8 @@ namespace CheeseGobang
             //        break;
             //    PieceSetActive(i + Offset, true,PieceTypeWhite);
             //}
-            bool nextSetted = false;
+            nextSetted = false;
+            WinCheak();
             for (int i = 0; i < 15; i++)
                 for (int j = 0; j < 15; j++)
                 {
@@ -208,8 +214,6 @@ namespace CheeseGobang
                             break;
                     }
                 }
-
-            WinCheak();
         }
         public override void OnDeserialization()
         {
