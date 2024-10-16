@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!114 &4278402081732493862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,7 +1957,7 @@ PrefabInstance:
     - target: {fileID: 3879697760640457591, guid: 0d6ceaebd4b95194a9d7b6ea92266c11,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5559521913226552748, guid: 0d6ceaebd4b95194a9d7b6ea92266c11,
         type: 3}
@@ -2078,7 +2078,7 @@ PrefabInstance:
     - target: {fileID: 3879697760640457591, guid: 0d6ceaebd4b95194a9d7b6ea92266c11,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5559521913226552748, guid: 0d6ceaebd4b95194a9d7b6ea92266c11,
         type: 3}
