@@ -122,11 +122,15 @@ namespace CheeseGobang
 
         public void PutBack()
         {
+            pickup = (VRC_Pickup)GetComponent(typeof(VRC_Pickup));
+            pickup.Drop();
+            pickup.pickupable = false;
+            isPicked = false;
             transform.localPosition = Type==PieceTypeWhite?initalPosition:initalPositionb;
             transform.localRotation = Quaternion.Euler(new Vector3(0,0,0));
             if(SelectedMark.activeSelf)
                 SelectedMark.SetActive(false);
-            pickup = (VRC_Pickup)GetComponent(typeof(VRC_Pickup));
+
             pickup.pickupable = true;
         }
 
