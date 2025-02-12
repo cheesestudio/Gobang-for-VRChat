@@ -175,13 +175,6 @@ namespace CheeseGobang
         {
             flag = Calculate(); //奇黑偶白
 
-            //for (int i = 0; i <= flag / 2; i++)
-            //{
-            //    PieceSetActive(i, true,PieceTypeBlack);
-            //    if (i == flag / 2 && flag % 2 == 0) //保证偶数情况下,显示flag+1颗棋子
-            //        break;
-            //    PieceSetActive(i + Offset, true,PieceTypeWhite);
-            //}
             nextSetted = false;
             WinCheak();
             for (int i = 0; i < 15; i++)
